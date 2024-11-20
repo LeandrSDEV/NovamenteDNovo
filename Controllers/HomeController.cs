@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using NovamenteDenovo.Models;
+using NovamenteDenovo.Models.ViewsError;
 using System.Diagnostics;
 
 namespace NovamenteDenovo.Controllers

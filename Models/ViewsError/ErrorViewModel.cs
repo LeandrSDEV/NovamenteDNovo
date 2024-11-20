@@ -1,4 +1,4 @@
-namespace NovamenteDenovo.Models
+namespace NovamenteDenovo.Models.ViewsError
 {
     public class ErrorViewModel
     {
