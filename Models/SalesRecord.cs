@@ -1,20 +1,24 @@
-﻿namespace NovamenteDenovo.Models
+﻿using NovamenteDenovo.Enums;
+
+namespace NovamenteDenovo.Models
 {
     public class SalesRecord
     {
         public int Id { get; set; }
         public DateTime Date { get; set; }
         public double Amount { get; set; }
-        public SalesRecord Sales { get; set; }
+        public SaleStatus Status { get; set; }
+        public Seller Seller { get; set; }
 
         public SalesRecord() { }
 
-        public SalesRecord(int id, DateTime date, double amount, SalesRecord sales)
+        public SalesRecord(int id, DateTime date, double amount, SaleStatus status, Seller seller)
         {
             Id = id;   
             Date = date;
             Amount = amount;
-            Sales = sales;
+            Status = status;
+            Seller = seller;
         }
     }
 }
