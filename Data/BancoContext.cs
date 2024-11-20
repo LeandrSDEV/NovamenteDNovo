@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using NovamenteDenovo.Models;
 
 namespace NovamenteDenovo.Data
@@ -14,6 +10,6 @@ namespace NovamenteDenovo.Data
         {
         }
 
-        public DbSet<NovamenteDenovo.Models.Department> Department { get; set; } = default!;
+        public DbSet<Department> Department { get; set; } = default!;
     }
 }
